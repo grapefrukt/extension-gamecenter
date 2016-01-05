@@ -145,8 +145,6 @@ namespace gamecenter {
 			viewDelegate.onLeaderboardFinished = &leaderboardViewDismissed;
 			
 			isInitialized = 1;
-			authenticateLocalUser ();
-			
 		}
 		
 	}
