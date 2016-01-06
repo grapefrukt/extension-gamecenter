@@ -30,12 +30,12 @@ class GameCenter {
 		
 	}
 	
-	public static function authenticate ():Void {
+	public static function authenticate (pauseGame:Bool = true):Void {
 		
 		initialize ();
 		
 		#if ios
-		Lib.pause ();
+		if (pauseGame) Lib.pause ();
 		gamecenter_authenticate ();
 		#end
 		
